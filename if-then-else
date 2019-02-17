@@ -1,0 +1,276 @@
+Hi, I'm Eric Fischer, and I'm here to talk about what seems like
+a fairly absurd idea: the idea that if-then-else had to be invented.
+
+This is how we talk about conditions in programming languages:
+if something is true, then do a thing, else do a different thing.
+
+That's just English, right? "If you are tired, then go to bed."
+
+Except that it's not.  I am a native speaker of English, and
+"else" isn't a conjunction in English as I know it.
+
+I can say "If you are tired, then go to bed. Otherwise stay up."
+I can say "If not, stay up." I can even say "Or else, stay up."
+But I can't just say "Else stay up."
+
+So where did this "else" come from? The ACM History of Programming
+Languages conference proceedings is one of my favorite books,
+maybe the best 50 cents I ever spent, but it doesn't even
+consider such trivial design details as these.
+
+To understand where it came from, I thought it might be useful to
+look at how people talked about conditional processes before computers.
+
+It is actually pretty hard to find written examples of rigorous
+descriptions of conditional processes. One case of these is
+standardized legal proceedings where every candidate for an office
+had to have their qualification checked in the same way.
+
+Here is an example from the confirmation of election judges in Ohio.
+If there was any question about whether someone actually lived in the
+state, they were asked if they had been out of the state during
+the previous year, and if they had been, there were subsidiary
+questions about their intent to return, where they considered their
+home to be, and whether they voted anywhere else.
+
+The thing that I want to point out is that after these questions
+there is another question, asking where does your family live,
+that does not appear to be subsidiary to the question of whether
+you had been out of state in the previous year. But there is
+nothing in the text that makes it unambiguous which of the questions
+are at the top level and which are only relevant if you answered
+yes to another question.
+
+To a human reader this is fine, because we can make our own judgements
+of relevance. But I think this is the core distinction between
+computer programming and other descriptions of processes, because
+computers can't make judgements of relevance: you have to be explicit
+about everything.
+
+The problem didn't come up with the very earliest computers, because
+these computers couldn't actually make conditional decisions.
+They could partition a data set into subsets based on some condition,
+or they could do the same operation many times, but any judgements
+about stopping or repeating a process were still made by a human operator.
+
+This changed a few years later when computers started to have enough
+memory that programs could be in memory rather than read step by step
+from external punch cards or paper tapes or plugboards. The human
+operator was taken out of the loop, so decisions had to be made
+within the computer itself.
+
+The mental model of operation in these early computers is that in general
+they would do operation number 1, followed by operation number 2,
+followed by operation number 3, and so on, until they reached some
+special instruction that would, in some cases, jump to a different
+point in the sequence.
+
+Here, for example, is part of the instruction set from BINAC, one of
+the first commercially produced computers. It had three instructions
+that affected control flow: one to skip ahead by a single instruction,
+one to jump unconditionally to a different point in the sequence,
+and a third that checked whether the result of the previous
+calculation was negative, only jumping if that was true.
+
+The expected paradigm was that you subtracted the number of iterations
+you wanted to make from the number of your current iteration. If the
+result was negative, you weren't done yet, so you jumped back to do
+another round of calculation.
+
+This same idea was carried forward into the first higher-level
+programming languages, like Laning and Zierler's language at MIT.
+It followed exactly the same paradigm, except that the numbered
+steps of the program were evaluations of algebraic expressions,
+not single machine instructions.
+
+The first programming language that was widely known and used was
+Fortran, which was originally a product of IBM, and it generalized this
+paradigm a little bit. Instead of checking whether the result of
+a calculation was negative, its "if" statement checked whether an
+expression was negative, zero, or positive, and jumped to one of
+three different locations in the program depending on which it was.
+
+This should theoretically have been more powerful than just checking
+for a negative, but was probably actually more confusing than useful,
+because it meant you were always thinking about a jump in the flow of
+control rather than about a normal condition in which you continue on
+to the next step and an unusual condition in which you do something
+different.
+
+One way of making these three-way comparisons a little easier to think
+about came from Flow-Matic, a programming language from Remington Rand
+for business applications. It was Grace Murray Hopper's project before
+COBOL, and many of its concepts were carried forward into COBOL.
+
+Instead of subtracting one number from another,
+you said to compare two numbers, and then said where you wanted to jump
+based on a less than, equal to, or greater than comparison. You still
+had to think about all of these as jumps in the flow of control,
+but the jumps were based on comparisons, not on signs, so they were
+closer to how we programmers about conditions now.
+
+That same year, two different organizations began projects to develop
+programming languages that were not tied to one particular machine
+from one particular manufacturer. This machine independence also
+meant they could try to think about what the most natural way
+would be to talk about a process rather than what was the most
+straightforward to implement on some particular machine.
+
+The authors of the German "Proposal for a universal language for
+the description of computing processes" made two big conceptual leaps
+in how their "if" statement was formulated.
+
+First, instead of giving special privilege to the three-way
+less-than/equal/greater-than comparison form, their "if" statement
+introduced arbitrary boolean expressions. You could calculate and
+compare with as much complexity as you needed, including ands and ors,
+as long as the final result ended up with a true or false value.
+
+The second big leap was that instead of making the flow of control
+jump around, their "if" statement made a series of statements
+subsidiary to the condition. Whether the expression evaluated
+to true or false, you would always end up at the "always" statement
+at the end of the block, and the only difference would be whether
+or not the subsidiary statements had happened.
+
+This looks almost like "if" as we now know it, including the idea
+that there could be multiple ifs in a single block for different
+conditions. But it is important to realize that they expected
+all of the "ifs" to be evaluated, even if the first one had already
+been determined to be true. So if the statements controlled by
+the first if changed a variable that the second comparison depended upon,
+both blocks of statements might execute.
+
+The sort of weird part is that their proposal also included another
+entirely different conditional form, called "case." This doesn't
+have any relationship to "case" as it now exists in programming
+languages, for comparison of a single calculation against a series
+of constants. Instead, their "case" was also a set of boolean
+comparisons, but with the expressions to be evaluated set out
+in a separate block from the statements that would be controlled
+by them. It is not very clear why they thought both forms were
+necessary, except that you could put ifs inside cases, for
+nested comparisons.
+
+The interesting part from the perspective of this talk is that in
+addition to the boolean expressions they also included a case called
+"else." This was meant to correspond to what we call "default" in
+case statements now: the thing that happens if none of the cases
+are true. Why did they call it "else?" They don't say.
+
+The other proposal for a machine-neutral programming language
+came from a United States organization. It took the the idea of
+controlling statements by boolean expressions a step further:
+there wasn't even an "if" keyword; if an expression was followed
+by an arrow, then the expression controlled the statements that
+followed the arrow.
+
+This form also gets very close to if-then-else as we now know it.
+In particular, if you had a series of expressions and the statements
+that they controlled on the same line, and one expression had
+evaluated to true, all the rest of the expressions on the line
+would be short-circuited and skipped. This was just like "else if"
+as we use it now, but there was no "else" case without another if.
+
+The US and German organizations had a joint meeting at a conference
+in Switzerland and merged their proposals into a single document
+that they called the International Algebraic Language, and would
+be subsequently renamed to Algol.
+
+The "if" statement in the combined document came out looking
+mostly like the German proposal that had gone in, except that
+they eliminated the "always" terminator. This was possible because
+they also introduced "begin" and "end" keywords to group statements
+into blocks, so if there were multiple statements to be controlled
+by an "if," you could put them together into a block instead of
+needing the "always" to indicate where the block of controlled
+statements ended.
+
+This form still didn't have anything like "else." Instead, they
+had a second conditional form called "if either," that *did*
+have its own "end" statement at the end of a block of ifs, and
+used "or if" for what we would now call "else if." Like the
+American proposal that had gone in, this form still didn't have
+the idea of an "else" that was not followed by another if.
+
+The next year, the story gets very muddy. There were several
+papers presented about Algol at another conference in 1959,
+and one of them is the famous one were John Backus, who had also
+led the Fortran project, introduced the idea of formal grammars
+for programming languages.
+
+In his paper, Algol does not have the "if either" conditional
+form. Instead, it has another keyword called "converge," which
+causes the top-level ifs within the block to behave like "else ifs."
+Was this a proposal for a better "if either," or was it, even
+though the 1958 Algol had already been published, a rejected
+draft for what had become "if either?" There is no documentation
+to say which it was.
+
+In either case, "if either" would not last for much longer.
+In 1957, John McCarthy at MIT had written a grant proposal
+for a project that eventually became LISP, one of the other
+extremely old programming languages that still survives today.
+The language he proposes looks nothing like what LISP became,
+but introduces the idea of the conditional expression,
+as opposed to the conditional statement. The important
+distinction here is that an expression must always have a value,
+no matter what happens, as opposed to a statement which can
+simply not happen if the condition that controls it is not true.
+So at the end of his series of conditions and the sub-expressions
+that are calculated for the first one of which is true, he has
+a clause called "otherwise" which gives the value of the expression
+if none of the conditions were true.
+
+This model of conditions allowed Klaus Samelson to clean up
+and unify Algol's two separate conditional models at the end
+of 1959. He eliminated the entire "if either" form, leaving
+only the plain if, but adding a clause called "else" that would
+be performed if the corresponding "if" expression had been false.
+You could chain conditions together with "else if," just like
+the previous "if either" had allowed with "or if," but you could
+also use "else" by itself for a final set of statements that
+would run if none of the conditions had been true.
+
+This was the single conditional form that appeared in the Algol 60
+report the next year, and is the form that almost all subsequent
+programming languages had followed. It was still apparently very
+difficult for people to think about in 1960, because the report
+spends a page and a half explaining how it works, including the
+explation that "else" by itself is equivalent to "else if true then."
+
+As I said at the start, this use of "else" as a conjunction
+sounds very strange to English speakers, and it did not take
+long before some objections to it were raised. One was from
+Christopher Strachey, designing the CPL programming language,
+which was the grandparent of C and therefore the ancestor of
+most programming languages in use today. He called "else"
+"ignorantly incorrect English" and "egregiously incorrect,"
+and wanted to use "or" instead. But it didn't catch on.
+
+A few programming languages did go their own way. The MAD
+programming language from the University of Michigan was known
+for its extremely long keywords, and in addition to using
+"whenever" instead of "if," it used "otherwise" instead of "else"
+and "or whenever" instead of "else if."
+
+It is worth nothing the indentation in the MAD manual's example
+of how to use "or whenever" and "otherwise." It was years before
+most other programming languages adopted this style of indenting
+the statements controlled by conditions, even though it now
+seems unimaginable to do it any other way.
+
+In spite of Algol 60's influence, some programming languages
+still didn't have "else" into the 1980s. I first learned to
+program without it myself, in BASIC, so my programs from that era
+all had to have their control flow jump around rather than having
+statements controlled by conditions.
+
+So back to the original question: why is it called "else?"
+I think the answer is that in 19th century mathematical writing,
+"else" really was a conjunction, and it just fell out of use
+in the 20th century. Klaus Saumelson was a German speaker,
+and I think his knowledge of English had been mostly limited
+to mathematical writing, so it didn't sound especially weird
+to him. And so, 60 years later, the archaic usage that he
+revived is still part of our lives as programmers.
