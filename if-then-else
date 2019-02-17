@@ -1,7 +1,7 @@
 Hi, I'm Eric Fischer, and I'm here to talk about what seems like
 a fairly absurd idea: the idea that if-then-else had to be invented.
 
-This is how we talk about conditions in programming languages:
+If-then-else is how we talk about conditions in programming languages:
 if something is true, then do a thing, else do a different thing.
 
 That's just English, right? "If you are tired, then go to bed."
@@ -15,10 +15,10 @@ But I can't just say "Else stay up."
 
 So where did this "else" come from? The ACM History of Programming
 Languages conference proceedings is one of my favorite books,
-maybe the best 50 cents I ever spent, but it doesn't even
+maybe the best 50 cents I ever spent, but it doesn't even try to
 consider such trivial design details as these.
 
-To understand where it came from, I thought it might be useful to
+To understand where "else" came from, I thought it might be useful to
 look at how people talked about conditional processes before computers.
 
 It is actually pretty hard to find written examples of rigorous
@@ -78,10 +78,10 @@ result was negative, you weren't done yet, so you jumped back to do
 another round of calculation.
 
 This same idea was carried forward into the first higher-level
-programming languages, like Laning and Zierler's language at MIT.
-It followed exactly the same paradigm, except that the numbered
-steps of the program were evaluations of algebraic expressions,
-not single machine instructions.
+programming languages, like Halcombe Laning and Neal Zierler's
+language at MIT.  It followed exactly the same paradigm, except
+that the numbered steps of the program were evaluations of algebraic
+expressions, not single machine instructions.
 
 The first programming language that was widely known and used was
 Fortran, which was originally a product of IBM, and it generalized this
@@ -91,8 +91,8 @@ expression was negative, zero, or positive, and jumped to one of
 three different locations in the program depending on which it was.
 
 This should theoretically have been more powerful than just checking
-for a negative, but was probably actually more confusing than useful,
-because it meant you were always thinking about a jump in the flow of
+for a negative, but was probably actually just more confusing,
+because it meant you alway had to think about a jump in the flow of
 control rather than about a normal condition in which you continue on
 to the next step and an unusual condition in which you do something
 different.
@@ -144,8 +144,8 @@ both blocks of statements might execute.
 The sort of weird part is that their proposal also included another
 entirely different conditional form, called "case." This doesn't
 have any relationship to "case" as it now exists in programming
-languages, for comparison of a single calculation against a series
-of constants. Instead, their "case" was also a set of boolean
+languages, which does comparison of a single calculation against a
+series of constants. Instead, their "case" was also a set of boolean
 comparisons, but with the expressions to be evaluated set out
 in a separate block from the statements that would be controlled
 by them. It is not very clear why they thought both forms were
@@ -186,33 +186,33 @@ by an "if," you could put them together into a block instead of
 needing the "always" to indicate where the block of controlled
 statements ended.
 
-This form still didn't have anything like "else." Instead, they
-had a second conditional form called "if either," that *did*
-have its own "end" statement at the end of a block of ifs, and
-used "or if" for what we would now call "else if." Like the
-American proposal that had gone in, this form still didn't have
-the idea of an "else" that was not followed by another if.
+The Algol "if" construction didn't have anything like "else."
+Instead, they had a second conditional form called "if either,"
+that *did* have its own "end" statement at the end of a block of
+ifs, and used "or if" for what we would now call "else if." Like
+the American proposal that had gone in, the "if either" form still
+didn't have the idea of an "else" that was not followed by another if.
 
-The next year, the story gets very muddy. There were several
-papers presented about Algol at another conference in 1959,
-and one of them is the famous one were John Backus, who had also
-led the Fortran project, introduced the idea of formal grammars
-for programming languages.
+The next year, the story gets very muddy. There were several papers
+presented about Algol at another conference in Paris in 1959, and
+one of them is the famous one were John Backus, who had also led
+the Fortran project, introduced the idea of formal grammars for
+programming languages.
 
-In his paper, Algol does not have the "if either" conditional
-form. Instead, it has another keyword called "converge," which
-causes the top-level ifs within the block to behave like "else ifs."
-Was this a proposal for a better "if either," or was it, even
-though the 1958 Algol had already been published, a rejected
-draft for what had become "if either?" There is no documentation
-to say which it was.
+As described in his paper, Algol does not have the "if either"
+conditional form. Instead, it has another keyword called "converge,"
+which causes the top-level ifs within the block to behave like "else
+ifs." Was this a proposal for a better "if either," or was it, even
+though the 1958 Algol had already been published, a rejected draft
+for what had become "if either?" There is no documentation to say
+which it was.
 
 In either case, "if either" would not last for much longer.
 In 1957, John McCarthy at MIT had written a grant proposal
 for a project that eventually became LISP, one of the other
 extremely old programming languages that still survives today.
-The language he proposes looks nothing like what LISP became,
-but introduces the idea of the conditional expression,
+The language he proposes looks nothing like what LISP soon
+became, but introduces the idea of the conditional expression,
 as opposed to the conditional statement. The important
 distinction here is that an expression must always have a value,
 no matter what happens, as opposed to a statement which can
@@ -225,7 +225,7 @@ if none of the conditions were true.
 This model of conditions allowed Klaus Samelson to clean up
 and unify Algol's two separate conditional models at the end
 of 1959. He eliminated the entire "if either" form, leaving
-only the plain if, but adding a clause called "else" that would
+only the plain if, but added a clause called "else" that would
 be performed if the corresponding "if" expression had been false.
 You could chain conditions together with "else if," just like
 the previous "if either" had allowed with "or if," but you could
@@ -234,16 +234,16 @@ would run if none of the conditions had been true.
 
 This was the single conditional form that appeared in the Algol 60
 report the next year, and is the form that almost all subsequent
-programming languages had followed. It was still apparently very
-difficult for people to think about in 1960, because the report
-spends a page and a half explaining how it works, including the
+programming languages have followed. If-then-else was still apparently
+very difficult for people to think about in 1960, because the Algol
+report spends a page and a half explaining how it works, including the
 explation that "else" by itself is equivalent to "else if true then."
 
 As I said at the start, this use of "else" as a conjunction
 sounds very strange to English speakers, and it did not take
 long before some objections to it were raised. One was from
-Christopher Strachey, designing the CPL programming language,
-which was the grandparent of C and therefore the ancestor of
+Christopher Strachey, designing the CPL programming language.
+CPL was the grandparent of C and therefore the ancestor of
 most programming languages in use today. He called "else"
 "ignorantly incorrect English" and "egregiously incorrect,"
 and wanted to use "or" instead. But it didn't catch on.
@@ -269,8 +269,8 @@ statements controlled by conditions.
 So back to the original question: why is it called "else?"
 I think the answer is that in 19th century mathematical writing,
 "else" really was a conjunction, and it just fell out of use
-in the 20th century. Klaus Saumelson was a German speaker,
-and I think his knowledge of English had been mostly limited
-to mathematical writing, so it didn't sound especially weird
+in the 20th century. Klaus Samelson was a German speaker,
+and I think his knowledge of English came mostly from
+mathematical writing, so it didn't sound especially weird
 to him. And so, 60 years later, the archaic usage that he
 revived is still part of our lives as programmers.
