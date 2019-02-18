@@ -34,7 +34,7 @@ were subsidiary questions about their intent to return, where they
 considered their home to be, and whether they had voted anywhere else.
 
 The thing that is maybe not so obvious is that this "if yes" is
-never terminated. The text does not say whether the final question,
+not explicitly terminated. The text does not say whether the final question,
 asking where the candidate's family lives, is something that everyone
 is asked, or whether it is something that is only asked if the
 candidate had left the state.
