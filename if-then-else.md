@@ -118,7 +118,7 @@ also meant they could try to think about what would be the most
 natural way to talk about a process rather than what was the most
 straightforward to implement on some particular machine.
 
-The authors of the German "Proposal for a universal language for
+The German authors of the "Proposal for a universal language for
 the description of computing processes" made two big conceptual leaps
 in how their "if" statement was formulated.
 
