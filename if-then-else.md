@@ -103,7 +103,7 @@ about came from Flow-Matic, a programming language from Remington Rand
 for business applications. It was Grace Murray Hopper's project before
 COBOL, and many of its concepts were carried forward into COBOL.
 
-In Flow-Matic, instead of subtracting one number from another, you
+In Flow-Matic, instead of looking at the sign of a number, you
 said to compare two numbers, and then said where you wanted to jump
 if the first number was less than, equal to, or greater than the
 second. You still had to think about all of these as jumps in the
