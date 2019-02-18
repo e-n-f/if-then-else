@@ -58,12 +58,11 @@ from external punch cards or paper tapes or plugboards. The human
 operator was taken out of the loop, so decisions had to be made
 within the computer itself.
 
-??? trim
-The mental model of operation in these early computers is that in general
-they would do operation number 1, followed by operation number 2,
-followed by operation number 3, and so on, until they reached some
-special instruction that would, in some cases, jump to a different
-point in the instruction sequence.
+Like their predecessors, these computers generally performed their
+instructions in a fixed sequence. But they also had a few special
+instructions that would jump ahead or back to a different point in
+the sequence, either unconditionally or only in some particular
+circumstance.
 
 Here, for example, is part of the instruction set from BINAC, one of
 the first commercially produced computers. It had three instructions
@@ -72,8 +71,10 @@ one to jump unconditionally to a different point in the sequence,
 and a third that checked whether the result of the previous
 calculation was negative, only jumping if that was true.
 
-The expected paradigm was that you subtracted the number of iterations
-you wanted to make from the number of your current iteration. If the
+This conditional jump was designed to support one specific usage pattern:
+if you wanted to do a thing several times, at the end of each iteration
+you subtracted the total number of iterations you wanted to make from
+the number of the current iteration. If the
 result was negative, that meant you weren't done yet, so you jumped back to do
 another round of calculation.
 
