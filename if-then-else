@@ -6,18 +6,16 @@ If-then-else is how we talk about conditions in programming languages:
 
 That's just English, right? "If you are tired, then go to bed."
 
-Except that it's not.  I am a native speaker of English, and
-"else" isn't a conjunction in English as I know it.
+Except that it isn't.  I am a native speaker of English, and
+"else" isn't a conjunction in English as I learned it.
 
 I can say "If you are tired, then go to bed. Otherwise stay up."
 I can say "If not, stay up." I can even say "Or else, stay up."
 But I can't just say "Else stay up."
 
-So where did this "else" come from? As far as I can tell, this is
-not something that anyone has written about. The 1978 ACM History of
-Programming Languages conference proceedings is one of my favorite
-books, maybe the best 50 cents I ever spent, but it doesn't even try to
-consider such microscopic design details as these.
+So where did this "else" come from? The question doesn't seem to be
+something that anyone has written about. It's too microscopic a detail
+to have made it into any books on the history of programming languages.
 
 To understand where "else" came from, I thought it might be useful to
 look at how people talked about conditional processes before computers.
@@ -262,12 +260,6 @@ of how to use "or whenever" and "otherwise." It was years before
 most other programming languages adopted this style of indenting
 the statements controlled by conditions, even though it now
 seems unimaginable to do it any other way.
-
-In spite of Algol 60's influence, some programming languages
-still didn't have "else" into the 1980s. I first learned to
-program without it myself, in BASIC, so my programs from that era
-all had to have their control flow jump around rather than having
-statements controlled by conditions.
 
 So back to the original question: why is it called "else?"
 I think the answer is that in 19th century mathematical writing,
