@@ -193,7 +193,7 @@ didn't have the idea of an "else" that was not followed by another if.
 
 The next year, the story gets very muddy. There were several papers
 presented about Algol at another conference in Paris in 1959, and
-one of them is the famous one were John Backus, who had previously
+one of them is the famous one where John Backus, who had previously
 led the Fortran project, introduced the idea of formal grammars for
 programming languages.
 
