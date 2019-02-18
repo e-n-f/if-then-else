@@ -17,13 +17,14 @@ So where did this "else" come from? The question doesn't seem to be
 something that anyone has written about. It's too microscopic a detail
 to have made it into any books on the history of programming languages.
 
-To understand where "else" came from, I thought it might be useful to
-look at how people talked about conditional processes before computers.
+To understand why programmers talk about conditions the way they do,
+I thought it might help to look at how conditional processes were
+described before there were computers.
 
-It is actually pretty hard to find written examples of rigorous
-descriptions of conditional processes. One place where it does come up is
-standardized legal proceedings where every candidate for an office
-had to have their qualifications checked in the same way.
+It is actually pretty hard to find good examples of pre-computer
+conditional processes.  One circumstance where there are examples
+is standardized legal proceedings where every candidate for an
+office had to have their qualifications checked in the same way.
 
 Here is a 19th century example from the confirmation of election
 judges in Ohio.  If there was any question about whether someone
@@ -32,25 +33,24 @@ of the state during the previous year, and if they had been, there
 were subsidiary questions about their intent to return, where they
 considered their home to be, and whether they had voted anywhere else.
 
-The thing that I want to point out is that after these subsidiary questions
-there is another question, asking where does your family live,
-that does not appear to be subsidiary to the question of whether
-you had been out of state in the previous year. But there is
-nothing in the text that makes it unambiguous which of the questions
-are at the top level and which are only relevant if you answered
-yes to the other question.
+The thing that is maybe not so obvious is that this "if yes" is
+never terminated. The text does not say whether the final question,
+asking where the candidate's family lives, is something that everyone
+is asked, or whether it is something that is only asked if the
+candidate had left the state.
 
-To a human reader this is fine, because we can make our own judgements
-of relevance. But I think this is the core distinction between
-computer programming and other descriptions of processes, because
-computers can't make judgements of relevance: you have to be explicit
-about everything.
+To a human reader this is OK, because we can make our own judgements
+of relevance. But I think this is the core thing that distinguishes
+computer programming from any other type of giving instructions:
+you have to be explicit about everything because computers can't
+make their own judgements.
 
-The problem didn't come up with the very earliest computers, because
-these computers couldn't actually make conditional decisions.
-They could partition a data set into subsets based on some condition,
-or they could do the same operation many times, but any judgements
-about stopping or repeating a process were still made by a human operator.
+How to talk more clearly about conditionals didn't come up with the
+very earliest computers, because these computers couldn't actually
+make conditional decisions.  They could partition a data set into
+subsets based on some condition, or they could do the same operation
+many times, but any judgements about stopping or repeating a process
+were still made by a human operator.
 
 This changed a few years later when computers started to have enough
 memory that programs could be in memory rather than read step by step
@@ -62,7 +62,7 @@ The mental model of operation in these early computers is that in general
 they would do operation number 1, followed by operation number 2,
 followed by operation number 3, and so on, until they reached some
 special instruction that would, in some cases, jump to a different
-point in the sequence.
+point in the instruction sequence.
 
 Here, for example, is part of the instruction set from BINAC, one of
 the first commercially produced computers. It had three instructions
@@ -82,19 +82,19 @@ language at MIT for Whirlwind.  It followed exactly the same paradigm,
 except that the numbered steps of the program were evaluations of
 algebraic expressions, not single machine instructions.
 
-The first programming language that was widely known and used was
-Fortran, which was originally a product of IBM, and it generalized this
-paradigm a little bit. Instead of checking whether the result of
-a calculation was negative, its "if" statement checked whether an
-expression was negative, zero, or positive, and jumped to one of
-three different locations in the program depending on which it was.
+The first widely used programming language was Fortran, from IBM,
+and it generalized this paradigm a little bit. Instead of checking
+whether the result of a calculation was negative, its "if" statement
+checked whether an expression was negative, zero, or positive, and
+jumped to one of three different locations in the program depending
+on which it was.
 
 This should theoretically have been more powerful than just checking
 for a negative, but was probably actually just more confusing,
-because it meant you *always* had to think about a jump in the flow of
-control rather than about a normal condition in which you continue on
-to the next step and an unusual condition in which you do something
-different.
+because it meant you *always* had to think about discontinuities in the flow of
+control instead of being able to make a clean distinction between the
+normal condition in which you continue on to the next step, and the
+unusual condition in which case you have to do something different.
 
 One way of making these three-way comparisons a little easier to think
 about came from Flow-Matic, a programming language from Remington Rand
@@ -112,8 +112,8 @@ conditions now.
 That same year, two different national organizations began projects
 to develop programming languages that were not tied to one particular
 machine from one particular manufacturer. This machine independence
-also meant they could try to think about what the most natural way
-would be to talk about a process rather than what was the most
+also meant they could try to think about what would be the most
+natural way to talk about a process rather than what was the most
 straightforward to implement on some particular machine.
 
 The authors of the German "Proposal for a universal language for
@@ -122,16 +122,17 @@ in how their "if" statement was formulated.
 
 First, instead of giving special privilege to the three-way
 less-than/equal/greater-than comparison form, their "if" statement
-introduced arbitrary boolean expressions. You could calculate and
+accepted arbitrary boolean expressions. You could calculate and
 compare with as much complexity as you needed, including ands and ors,
 as long as the final result ended up with a true or false value.
 
-The second big leap was that instead of making the flow of control
-jump around, their "if" statement made a series of statements
-subsidiary to the condition. Whether the expression evaluated
-to true or false, you would always end up at the "always" statement
-at the end of the block, and the only difference would be whether
-or not the subsidiary statements had been performed.
+The second big leap was that instead of causing the flow of control
+to jump around, their "if" statement caused only a temporary diversion
+instead, just enough to let a series of statements subsidiary to
+the condition to be executed. Afterward, whether the expression had
+evaluated to true or to false, you would always end up at the
+"always" statement at the end of the block, and the only difference
+would be whether or not the subsidiary statements had been performed.
 
 This looks almost like "if" as we now know it, including the idea
 that there could be multiple ifs in a single block for different
