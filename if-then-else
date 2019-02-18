@@ -22,11 +22,11 @@ I thought it might help to look at how conditional processes were
 described before there were computers.
 
 It is actually pretty hard to find good examples of pre-computer
-conditional processes.  One circumstance where there are examples
-is standardized legal proceedings where every candidate for an
-office had to have their qualifications checked in the same way.
+conditional processes. You can sometimes find them in survey forms,
+in descriptions of mathematical processes that involve guesswork,
+and in standardized legal proceedings.
 
-Here is a 19th century example from the confirmation of election
+Here for example is a 19th century process for the confirmation of election
 judges in Ohio.  If there was any question about whether someone
 actually lived in the state, they were asked if they had been out
 of the state during the previous year, and if they had been, there
@@ -58,6 +58,7 @@ from external punch cards or paper tapes or plugboards. The human
 operator was taken out of the loop, so decisions had to be made
 within the computer itself.
 
+??? trim
 The mental model of operation in these early computers is that in general
 they would do operation number 1, followed by operation number 2,
 followed by operation number 3, and so on, until they reached some
@@ -142,22 +143,16 @@ been determined to be true. So if the statements controlled by
 the first if changed a variable that the second comparison depended upon,
 both blocks of statements might execute.
 
-The sort of weird part is that their proposal also included another
-entirely different conditional form, called "case." This doesn't
-have any relationship to "case" as it now exists in programming
-languages, which does comparison of a single calculation against a
-series of constants. Instead, their "case" was also a set of boolean
-comparisons, but with the expressions to be evaluated set out
-in a separate block from the statements that would be controlled
-by them. It is not very clear why they thought both forms were
-necessary, except that you could put ifs inside cases, for
-nested comparisons.
+Their proposal also included another entirely different conditional
+form, called "case." It is unrelated to what "case" now means in
+programming languages, and instead was another way to write boolean
+expressions.  It appears that the reason to have both forms was
+that you could put ifs inside cases, for nested comparisons.
 
-The interesting part from the perspective of this talk is that in
-addition to the boolean expressions they also included a case called
-"else." This was meant to correspond to what we now call "default" in
-case statements: the thing that happens if none of the cases
-are true. Why did they call it "else?" They don't say.
+In addition to the boolean expressions they also included a case
+called "else," which seems to be the first use of the word in
+programming languages. It denoted the case where none of the other
+cases were true.  Why did they call it "else?" They don't say.
 
 The other proposal for a machine-neutral programming language
 came from a United States organization. It took the the idea of
