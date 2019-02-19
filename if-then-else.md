@@ -37,7 +37,7 @@ based on the result of a previous calculation seems to have been the Eniac.
 Haskell Curry and Willa Wyatt wrote a report in 1946 describing how to
 use the Eniac to invert a function and interpolate values.
 They used the name "discrimination" for the ability to make a decision
-based on which oftwo numbers was larger.
+based on which of two numbers was larger.
 
 The Eniac was programmed by connecting wires on plugboards, so
 they did not have an instruction called `discriminate.` They had
