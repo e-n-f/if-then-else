@@ -4,53 +4,31 @@ a fairly absurd idea: the idea that if-then-else had to be invented.
 If-then-else is how we talk about conditions in programming languages:
 *if* something is true, *then* do a thing, *else* do a different thing.
 
-That's just English, right? "If you are tired, then go to bed."
+That's just English, right? Except that it isn't. I am a native speaker
+of English, and I can't use "else" as a conjunction in normal speech,
+only in computer programs.
 
-Except that it isn't.  I am a native speaker of English, and
-"else" isn't a conjunction in English as I learned it.
-
-I can say "If you are tired, then go to bed. Otherwise stay up."
-I can say "If not, stay up." I can even say "Or else, stay up."
-But I can't just say "Else stay up."
-
-So where did this "else" come from? The question doesn't seem to be
-something that anyone has written about. It's too microscopic a detail
-to have made it into any books on the history of programming languages.
+So where did this `else` come from? It doesn't seem to be a thing that
+anyone has written about. It's too microscopic a detail to have made it
+into any books on the history of programming languages.
 
 To understand why programmers talk about conditions the way they do,
 I thought it might help to look at how conditional processes were
 described before there were computers.
 
-It is actually pretty hard to find good examples of pre-computer
-conditional processes. You can sometimes find them in survey forms,
-in descriptions of mathematical processes that involve guesswork,
-and in standardized legal proceedings.
+It is actually hard to find good examples of pre-computer conditional
+processes. There are surveys and legal procedures that require you to
+answer certain questions only if you answered yes to a different question.
 
-Here for example is a 19th century process for the confirmation of election
-judges in Ohio.  If there was any question about whether someone
-actually lived in the state, they were asked if they had been out
-of the state during the previous year, and if they had been, there
-were subsidiary questions about their intent to return, where they
-considered their home to be, and whether they had voted anywhere else.
+And there are mathematical algorithms, like taking a cube root, that
+involve some guesswork, and require repeating a step if you guessed wrong.
+But algorithms were generally framed as repetition, not as making decisions.
 
-The thing that is maybe not so obvious is that this "if yes" is
-not explicitly terminated. The text does not say whether the final question,
-asking where the candidate's family lives, is something that everyone
-is asked, or whether it is something that is only asked if the
-candidate had left the state.
-
-To a human reader this is OK, because we can make our own judgements
-of relevance. But I think this is the core thing that distinguishes
-computer programming from any other type of giving instructions:
-you have to be explicit about everything because computers can't
-make their own judgements.
-
-How to talk more clearly about conditionals didn't come up with the
-very earliest computers, because these computers couldn't actually
-make conditional decisions.  They could partition a data set into
-subsets based on some condition, or they could do the same operation
-many times, but any judgements about stopping or repeating a process
-were still made by a human operator.
+Even early computers didn't have any provision for performing
+parts of a program conditionally. You could partition a data set
+based on some condition, or repeat a process multiple times,
+but any judgements about stopping or repeating a process
+still had to be made by a human operator.
 
 This changed a few years later when computers started to have enough
 memory that programs could be in memory rather than read step by step
