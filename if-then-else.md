@@ -35,7 +35,7 @@ still had to be made by a human operator.
 The first computer to be able to automatically perform a different set of instructions
 based on the result of a previous calculation seems to have been the Eniac.
 
-Haskell Curry and Willa Wyatt wrote a report in 1946 describing how to
+In 1946, Haskell Curry and Willa Wyatt wrote a report describing how to
 use the Eniac to invert a function and interpolate values.
 They used the name "discrimination" for the facility of making a decision
 based on which of two numbers was larger.
