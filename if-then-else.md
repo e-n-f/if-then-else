@@ -16,8 +16,8 @@ To understand why programmers talk about conditions the way they do,
 I thought it might help to look at how conditional processes were
 described before there were computers.
 
-It is actually hard to find good examples of pre-computer conditional
-processes. About as close as you can come are surveys and legal procedures 
+It is actually hard to find good examples of these.
+About as close as you can come are surveys and legal procedures 
 that require you to answer certain questions only if you answered
 yes to a different question.
 
