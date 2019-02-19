@@ -19,15 +19,15 @@ described before there were computers.
 It is actually hard to find good examples of these.
 About as close as you can come are surveys and legal procedures 
 that require you to answer certain questions only if you answered
-yes to a different question.
+yes to a different question. But they say "if no," not "else."
 
 And there are mathematical algorithms, like taking a cube root, that
 involve some guesswork, and require repeating a step if you guessed wrong.
-But most algorithms were  described in terms of repetition,
-not in terms of making decisions. So that doesn't seem to be
-where it came from.
+But algorithms were mostly described in terms of repetition,
+not in terms of making decisions, and I haven't found any examples
+of "else" being used in the description of one.
 
-The earliest computers didn't have any provision for performing
+The earliest computers didn't even have any provision for performing
 parts of a program conditionally. You could partition a data set
 based on some condition, or repeat a process multiple times,
 but any judgements about stopping or repeating a process
