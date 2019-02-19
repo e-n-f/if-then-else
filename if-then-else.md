@@ -8,8 +8,8 @@ That's just English, right? Except that it isn't. I am a native speaker
 of English, and I can't use "else" as a conjunction in normal speech,
 only in computer programs.
 
-So where did this `else` come from? It doesn't seem to be a thing that
-anyone has written about. It's too microscopic a detail to have made it
+So where did this `else` come from? No one seems to have written about it.
+It's too microscopic a detail to have made it
 into any books on the history of programming languages.
 
 To understand why programmers talk about conditions the way they do,
@@ -17,8 +17,9 @@ I thought it might help to look at how conditional processes were
 described before there were computers.
 
 It is actually hard to find good examples of pre-computer conditional
-processes. There are surveys and legal procedures that require you to
-answer certain questions only if you answered yes to a different question.
+processes. About as close as you can come are surveys and legal procedures 
+that require you to answer certain questions only if you answered
+yes to a different question.
 
 And there are mathematical algorithms, like taking a cube root, that
 involve some guesswork, and require repeating a step if you guessed wrong.
@@ -30,17 +31,25 @@ based on some condition, or repeat a process multiple times,
 but any judgements about stopping or repeating a process
 still had to be made by a human operator.
 
-This changed a few years later when computers started to have enough
-memory that programs could be in memory rather than read step by step
-from external punch cards or paper tapes or plugboards. The human
-operator was taken out of the loop, so decisions had to be made
-within the computer itself.
+The first computer to be able to perform a different set of instructions
+based on the result of a previous calculation seems to have been the Eniac.
 
-Like their predecessors, these computers generally performed their
-instructions in a fixed sequence. But they also had a few special
-instructions that would jump ahead or back to a different point in
-the sequence, either unconditionally or only in some particular
-circumstance.
+Haskell Curry and Willa Wyatt wrote a report in 1946 describing how to
+make one particular calculation using the Eniac. They used the name
+"discrimination" for the ability to make a decision based on which of
+two numbers was larger.
+
+The Eniac was programmed by connecting wires on plugboards, so
+they did not have an instruction called "discriminate," they had
+physical wires connecting the control panel for one instruction
+to the control panels of the instructions that could follow it.
+
+Very soon, though, computer programs began to be stored in memory
+rather than wired together. In memory, instructions are normally
+performed in numeric sequence, one after the other. A few special
+instructions can change this sequence by jumping forward or back
+to a different point in the sequence, either unconditionally or
+only in some particular circumstance.
 
 Here, for example, is part of the instruction set from BINAC, one of
 the first commercially produced computers. It had three instructions
