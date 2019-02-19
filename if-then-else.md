@@ -31,12 +31,12 @@ based on some condition, or repeat a process multiple times,
 but any judgements about stopping or repeating a process
 still had to be made by a human operator.
 
-The first computer to be able to perform a different set of instructions
+The first computer to be able to automatically perform a different set of instructions
 based on the result of a previous calculation seems to have been the Eniac.
 
 Haskell Curry and Willa Wyatt wrote a report in 1946 describing how to
 use the Eniac to invert a function and interpolate values.
-They used the name "discrimination" for the ability to make a decision
+They used the name "discrimination" for the facility of making a decision
 based on which of two numbers was larger.
 
 The Eniac was programmed by connecting wires on plugboards, so
