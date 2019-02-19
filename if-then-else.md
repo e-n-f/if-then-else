@@ -35,12 +35,12 @@ The first computer to be able to perform a different set of instructions
 based on the result of a previous calculation seems to have been the Eniac.
 
 Haskell Curry and Willa Wyatt wrote a report in 1946 describing how to
-make one particular calculation using the Eniac. They used the name
-"discrimination" for the ability to make a decision based on which of
-two numbers was larger.
+use the Eniac to invert a function and interpolate values.
+They used the name "discrimination" for the ability to make a decision
+based on which oftwo numbers was larger.
 
 The Eniac was programmed by connecting wires on plugboards, so
-they did not have an instruction called "discriminate," they had
+they did not have an instruction called `discriminate.` They had
 physical wires connecting the control panel for one instruction
 to the control panels of the instructions that could follow it.
 
