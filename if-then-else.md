@@ -26,7 +26,7 @@ involve some guesswork, and require repeating a step if you guessed wrong.
 But most algorithms were  described in terms of repetition,
 not in terms of making decisions.
 
-Even early computers didn't have any provision for performing
+The earliest computers didn't have any provision for performing
 parts of a program conditionally. You could partition a data set
 based on some condition, or repeat a process multiple times,
 but any judgements about stopping or repeating a process
