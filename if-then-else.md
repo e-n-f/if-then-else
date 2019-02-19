@@ -249,8 +249,8 @@ the statements controlled by conditions, even though it now
 seems unimaginable to do it any other way.
 
 So back to the original question: why is it called "else?"
-I think the answer is that in 19th century mathematical writing,
-"else" really was a conjunction, and it just fell out of use
+I think the answer is that for a few 19th century mathematical writers,
+"else" really was a conjunction, before it fell completely out of use
 in the 20th century. Klaus Samelson was a German speaker,
 and I think his knowledge of English came mostly from
 mathematical writing, so it didn't sound especially weird
