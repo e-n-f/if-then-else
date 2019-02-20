@@ -47,14 +47,13 @@ instructions can change this sequence by jumping forward or back
 to a different point in the sequence, either unconditionally or
 only in some particular circumstance.
 
-Here, for example, is part of the instruction set from BINAC, one of
-the first commercially produced computers. It had three instructions
-that affected control flow: one to skip ahead by a single instruction,
-one to jump unconditionally to a different point in the sequence,
-and a third that checked whether the result of the previous
-calculation was negative, only jumping if that was true.
+Here, for example, is the conditional jump instruction from the BINAC, one of
+the first commercially produced computers. It checked whether the machine's
+accumulator contained a negative number. If it did, it diverted the flow of
+control to some specified instruction; otherwise, it let control continue
+normally to the next instruction.
 
-This conditional jump was designed to support one specific usage pattern:
+This instruction was designed to support a specific usage pattern:
 if you wanted to do a thing several times, at the end of each iteration
 you subtracted the total number of iterations you wanted to make from
 the number of the current iteration. If the
