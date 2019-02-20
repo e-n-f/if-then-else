@@ -28,15 +28,8 @@ But algorithms were mostly described in terms of repetition,
 not in terms of making decisions, and I haven't found any examples
 of "else" being used in the description of one.
 
-The earliest computers didn't even have any provision for performing
-parts of a program conditionally. You could partition a data set
-based on some condition, or repeat a process multiple times,
-but any judgements about stopping or repeating a process
-still had to be made by a human operator.
-
 The first computer to be able to automatically perform a different set of instructions
 based on the result of a previous calculation seems to have been the Eniac.
-
 In 1946, Haskell Curry and Willa Wyatt wrote a report describing how to
 use the Eniac to invert a function and interpolate values.
 They used the name "discrimination" for the facility of making a decision
