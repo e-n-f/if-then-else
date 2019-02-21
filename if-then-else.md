@@ -211,7 +211,7 @@ Unfortunately we do not have the original German text to consult.
 
 ---
 
-![14](https://user-images.githubuserontent.com/1951835/53197110-5a896680-35ce-11e9-9245-3a0bf26f476a.png)
+![14](https://user-images.githubusercontent.com/1951835/53197793-cd471180-35cf-11e9-8fd5-7b032e01228d.png)
 * http://www.softwarepreservation.org/projects/ALGOL/report/ACM_ALGOL_Proposal_1958.pdf
 
 The other proposal for a machine-neutral programming language
