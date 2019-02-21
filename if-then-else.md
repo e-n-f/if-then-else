@@ -218,7 +218,7 @@ didn't have the idea of an "else" that was not followed by another if.
 
 The next year, the story gets very muddy. There were several papers
 presented about Algol at another conference in Paris in 1959, and
-one of them is the famous one where John Backus, who had previously
+one of them is the famous paper where John Backus, who had previously
 led the Fortran project, introduced the idea of formal grammars for
 programming languages.
 
@@ -226,7 +226,7 @@ As described in his paper, Algol does not have the "if either"
 conditional form. Instead, it has another keyword called "converge,"
 which causes the top-level ifs within the block to behave like "else
 ifs." Was this a proposal for a better "if either," or was it
-an earlier draft of what had become "if either," published
+an earlier draft of what had already become "if either," published
 after it was already obsolete?  There is no documentation to say
 which it was.
 
