@@ -14,12 +14,12 @@ So where did this `else` come from? No one seems to have written about it.
 It's too microscopic a detail to have made it
 into any books on the history of programming languages.
 
+* https://books.google.com/books?id=AH9Fs8huUGsC&pg=PA46#v=onepage&q&f=false
+* https://archive.org/details/actsstateohio39statgoog/page/n189
+
 To understand why programmers talk about conditions the way they do,
 I thought it might help to look at how conditional processes were
 described before there were computers.
-
-* https://books.google.com/books?id=AH9Fs8huUGsC&pg=PA46#v=onepage&q&f=false
-* https://archive.org/details/actsstateohio39statgoog/page/n189
 
 It is actually hard to find good examples of these.
 About as close as you can come are surveys and legal procedures 
