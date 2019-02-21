@@ -251,7 +251,7 @@ would run if none of the conditions had been true.
 This was the single conditional form that appeared in the Algol 60
 report the next year, and is the form that almost all subsequent
 programming languages have followed. If-then-else was apparently
-not easy for people in 1960 to think, because the Algol
+not easy for people in 1960 to think about, because the Algol
 report spends a page and a half explaining how it works, including
 this arrow diagram and the
 explation that "else" by itself is equivalent to "else if true then."
