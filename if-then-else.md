@@ -175,8 +175,8 @@ Unfortunately we do not have the original German text to consult.
 * http://www.softwarepreservation.org/projects/ALGOL/report/ACM_ALGOL_Proposal_1958.pdf
 
 The other proposal for a machine-neutral programming language
-came from a United States organization. It took the the idea of
-controlling statements by boolean expressions a step further:
+came from the Association for Computing Machinery in the United States.
+It took the the idea of controlling statements by boolean expressions a step further:
 there wasn't even an "if" keyword; if an expression was followed
 by an arrow, then the expression controlled the statements that
 followed the arrow.
