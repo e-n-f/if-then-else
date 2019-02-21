@@ -244,7 +244,7 @@ no matter what happens, as opposed to a statement which can
 simply not happen if the condition that controls it is not true.
 So McCarthy's "if function" always contains a clause called "otherwise."
 "Otherwise" gives the final value of the expression when none of the
-other conditions in the if function evaluate to true.
+other conditions in the if function have evaluated to true.
 
 * https://dl.acm.org/citation.cfm?id=1060889
 
