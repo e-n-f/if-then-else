@@ -270,8 +270,8 @@ sound very natural either, and didn't catch on.
 
 * http://www.bitsavers.org/pdf/univOfMichigan/mad/L2-UOI-MAD1-2-RX_MADum_62.pdf
 
-A few programming languages did go their own way. The MAD
-programming language from the University of Michigan was known
+The MAD programming language from the University of Michigan 
+also went its own way. MAD was known
 for its extremely long keywords, and in addition to using
 "whenever" instead of "if," it used "otherwise" instead of "else"
 and "or whenever" instead of "else if."
