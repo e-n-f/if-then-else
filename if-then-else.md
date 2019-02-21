@@ -49,7 +49,7 @@ based on which of two numbers was larger.
 The Eniac was programmed by connecting wires on plugboards, so
 they did not have an instruction called `discriminate.` They had
 physical wires connecting the control panel for one instruction
-to the control panels of the instructions that could follow it.
+to the control panels of the alternative instructions that could follow it.
 
 Very soon, though, computer programs began to be stored in memory
 rather than wired together. In memory, instructions are normally
