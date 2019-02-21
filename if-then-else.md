@@ -277,8 +277,8 @@ Christopher Strachey, designing the CPL programming language.
 CPL was the grandparent of C and therefore the ancestor of
 most programming languages in use today. He called "else"
 "ignorantly incorrect English" and "egregiously incorrect,"
-and wanted to use "test … then … or" instead. But it doesn't
-sound very natural either, and didn't catch on.
+and wanted to use "test … then … or" instead. But that doesn't
+sound very natural either, and it didn't catch on.
 
 * http://www.bitsavers.org/pdf/univOfMichigan/mad/L2-UOI-MAD1-2-RX_MADum_62.pdf
 
