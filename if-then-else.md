@@ -25,7 +25,7 @@ It is actually hard to find good examples of these.
 About as close as you can come are surveys and legal procedures 
 that require you to answer certain questions only if you answered
 yes to a different question. But for the alternative cases,
-they say "if no," not "else."
+they say "if yes" or "if no," not "else."
 
 * https://archive.org/details/in.ernet.dli.2015.463129/page/n85
 
@@ -33,7 +33,7 @@ And there are mathematical algorithms, like taking a cube root, that
 involve some guesswork, and require repeating a step if you guessed wrong.
 But algorithms were mostly described in terms of repetition,
 not in terms of making decisions, and I haven't found any examples
-of "else" being used in the description of one.
+of "else" being used when they do talk about decisions.
 
 * https://apps.dtic.mil/dtic/tr/fulltext/u2/640621.pdf
 
