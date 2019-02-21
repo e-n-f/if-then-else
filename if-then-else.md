@@ -109,8 +109,8 @@ said to compare two numbers, and then said where you wanted to jump
 if the first number was less than, equal to, or greater than the
 second. You still had to think about all of these as jumps in the
 flow of control, but the jumps were based on comparisons, not on
-arithmetic signs, so they were closer to how programmers think about
-conditions now.
+arithmetic signs, so they were one step closer to talking about
+conditions in a natural way.
 
 That same year, two different national organizations began projects
 to develop programming languages that were not tied to one particular
