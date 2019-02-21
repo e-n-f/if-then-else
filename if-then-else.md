@@ -297,6 +297,6 @@ seems unimaginable to do it any other way.
 * …
 
 But even while CPL and MAD shunned the word "else," they kept
-the form and only changed the vocabulary. People continue to search
+the form and only changed the vocabulary. Language designers still search
 for the perfect way to write a `for` loop, but the quest for
 the perfect conditional form seems to have ended in 1959.
