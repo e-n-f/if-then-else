@@ -1,6 +1,8 @@
 Hi, I'm Eric Fischer, and I'm here to talk about what seems like
 a fairly absurd idea: the idea that if-then-else had to be invented.
 
+* …
+
 If-then-else is how we talk about conditions in programming languages:
 *if* something is true, *then* do a thing, *else* do a different thing.
 
@@ -159,6 +161,13 @@ called "else," which seems to be the first use of the word in
 programming languages. It denoted the case where none of the other
 cases were true.  Why did they call it "else?" They don't say.
 
+* http://www.softwarepreservation.org/projects/ALGOL/report/BauerBRS-Proposal_for_a_Universal_Language-1958.pdf
+
+The best explanation for the word choice may be this note.
+We are looking at a document that was originally written in German
+and was hastily translated into English. A carefully-chosen German word
+was probably translated as an archaic English word and then never revisited.
+
 * http://www.softwarepreservation.org/projects/ALGOL/report/ACM_ALGOL_Proposal_1958.pdf
 
 The other proposal for a machine-neutral programming language
@@ -282,25 +291,9 @@ most other programming languages adopted this style of indenting
 the statements controlled by conditions, even though it now
 seems unimaginable to do it any other way.
 
-* https://books.google.com/books?id=6O0GAAAAYAAJ&pg=PA2
-* https://books.google.com/books?id=DB9YAAAAYAAJ&pg=PA147
-* https://books.google.com/books?id=bCRcAAAAQAAJ&pg=PA1
+* …
 
 But even while CPL and MAD shunned the word "else," they kept
-the form and only changed the vocabulary. People keep searching
+the form and only changed the vocabulary. People continue to search
 for the perfect way to write a `for` loop, but the quest for
 the perfect conditional form seems to have ended in 1959.
-
-I still haven't answered the question of why it's called "else"
-because I really don't know. The best clue I have is that for a
-few 19th century mathematical writers, "else" really was a
-conjunction, before it completely fell out of use in the
-20th century.
-
-* http://www.softwarepreservation.org/projects/ALGOL/report/BauerBRS-Proposal_for_a_Universal_Language-1958.pdf
-
-Klaus Samelson was a German speaker,
-and I think his knowledge of English came mostly from
-mathematical writing, so it didn't sound especially weird
-to him. And so, 60 years later, the archaic usage that he
-revived is still part of our lives as programmers.
