@@ -338,7 +338,7 @@ long before some objections to it were raised. One was from
 Christopher Strachey, designing the CPL programming language.
 CPL was the grandparent of C and therefore the ancestor of
 most programming languages in use today. He called "else"
-"ignorantly incorrect English" and "egregiously incorrect,"
+"ignorantly incorrect English"
 and wanted to use "test … then … or" instead. But that doesn't
 sound very natural either, and it didn't catch on.
 
