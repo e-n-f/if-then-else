@@ -295,9 +295,11 @@ most other programming languages adopted this style of indenting
 the statements controlled by conditions, even though it now
 seems unimaginable to do it any other way.
 
-* …
+* https://www.in.tum.de/en/the-department/history/
 
 But even while CPL and MAD shunned the word "else," they kept
 the form and only changed the vocabulary. Language designers still search
 for the perfect way to write a `for` loop, but the quest for
 the perfect conditional form seems to have ended in 1959.
+Thank you Klaus Samelson, for giving us a tool to think with
+and a word to puzzle over.
