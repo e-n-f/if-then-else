@@ -152,8 +152,8 @@ both blocks of statements might execute.
 Their proposal also included another entirely different conditional
 form, called "case." It is unrelated to what "case" now means in
 programming languages, and instead was another way to write boolean
-expressions, with the expressions set apart from the statements
-they controlled in a separate section.  It appears that the reason to have both forms was
+expressions, with the expressions set apart in a separate section from the statements
+they controlled.  It appears that the reason to have both forms was
 that you could put ifs inside cases, for nested comparisons.
 
 In addition to the boolean expressions they also included a case
