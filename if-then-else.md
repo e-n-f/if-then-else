@@ -21,8 +21,6 @@ into any books on the history of programming languages.
 ---
 
 ![03](https://user-images.githubusercontent.com/1951835/53196896-f23a8500-35cd-11e9-8df5-9169cb63285c.png)
-* https://books.google.com/books?id=AH9Fs8huUGsC&pg=PA46#v=onepage&q&f=false
-* https://archive.org/details/actsstateohio39statgoog/page/n189
 
 To understand why programmers talk about conditions the way they do,
 I thought it might help to look at how conditional processes were
@@ -34,10 +32,12 @@ that require you to answer certain questions only if you answered
 yes to a different question. But for the alternative cases,
 they say "if yes" or "if no," not "else."
 
+* https://books.google.com/books?id=AH9Fs8huUGsC&pg=PA46#v=onepage&q&f=false
+* https://archive.org/details/actsstateohio39statgoog/page/n189
+
 ---
 
 ![04](https://user-images.githubusercontent.com/1951835/53196910-fa92c000-35cd-11e9-910f-921fe648b512.png)
-* https://archive.org/details/in.ernet.dli.2015.463129/page/n85
 
 And there are mathematical algorithms, like taking a cube root, that
 involve some guesswork, and require repeating a step if you guessed wrong.
@@ -45,10 +45,11 @@ But algorithms were mostly described in terms of repetition,
 not in terms of making decisions, and I haven't found any examples
 of "else" being used when they do talk about decisions.
 
+* https://archive.org/details/in.ernet.dli.2015.463129/page/n85
+
 ---
 
 ![05](https://user-images.githubusercontent.com/1951835/53196928-03839180-35ce-11e9-87e5-6a99846479ec.png)
-* https://apps.dtic.mil/dtic/tr/fulltext/u2/640621.pdf
 
 The first computer to be able to automatically perform a different set of instructions
 based on the result of a previous calculation seems to have been the Eniac.
@@ -57,10 +58,11 @@ use the Eniac to invert a function and interpolate values.
 They used the name "discrimination" for the facility of making a decision
 based on which of two numbers was larger.
 
+* https://apps.dtic.mil/dtic/tr/fulltext/u2/640621.pdf
+
 ---
 
 ![06](https://user-images.githubusercontent.com/1951835/53196947-0c746300-35ce-11e9-8db7-2e8f0fc2e1d8.png)
-* http://www.columbia.edu/cu/computinghistory/eniac.html
 
 The Eniac was programmed by connecting wires on plugboards, so
 they did not have an instruction called `discriminate.` They had
@@ -74,10 +76,11 @@ instructions can change this sequence by jumping forward or back
 to a different point in the sequence, either unconditionally or
 only in some particular circumstance.
 
+* http://www.columbia.edu/cu/computinghistory/eniac.html
+
 ---
 
 ![07](https://user-images.githubusercontent.com/1951835/53197002-27df6e00-35ce-11e9-82b4-8f0085b79a31.png)
-* http://s3data.computerhistory.org/brochures/eckertmauchly.binac.1949.102646200.pdf
 
 Here, for example, is the conditional jump instruction from the BINAC, one of
 the first commercially produced computers. It checked whether the machine's
@@ -92,10 +95,11 @@ the number of the current iteration. If the
 result was negative, that meant you weren't done yet, so you jumped back to do
 another round of calculation.
 
+* http://s3data.computerhistory.org/brochures/eckertmauchly.binac.1949.102646200.pdf
+
 ---
 
 ![08](https://user-images.githubusercontent.com/1951835/53197024-3037a900-35ce-11e9-9813-dc2f2d5a5c2b.png)
-* https://archive.computerhistory.org/resources/text/Fortran/102653982.05.01.acc.pdf
 
 This same idea was carried forward into the first higher-level
 programming languages, like Halcombe Laning and Neal Zierler's
@@ -103,10 +107,11 @@ language at MIT for Whirlwind.  It followed exactly the same paradigm,
 except that the numbered steps of the program were evaluations of
 algebraic expressions, not single machine instructions.
 
+* https://archive.computerhistory.org/resources/text/Fortran/102653982.05.01.acc.pdf
+
 ---
 
 ![09](https://user-images.githubusercontent.com/1951835/53197039-362d8a00-35ce-11e9-8099-b1597edc5f97.png)
-* https://www.fortran.com/FortranForTheIBM704.pdf
 
 The first widely used programming language was Fortran, from IBM,
 and it generalized this paradigm a little bit. Instead of checking
@@ -122,10 +127,11 @@ control instead of being able to make a clean distinction between the
 normal condition in which you continue on to the next step, and the
 unusual condition in which case you have to do something different.
 
+* https://www.fortran.com/FortranForTheIBM704.pdf
+
 ---
 
 ![10](https://user-images.githubusercontent.com/1951835/53197053-3ded2e80-35ce-11e9-9fb6-d46dcb793984.png)
-* https://archive.org/details/bitsavers_univacflowProgrammingSystem1958_9367413/page/n39
 
 One way of making these three-way comparisons a little easier to think
 about came from Flow-Matic, a programming language from Remington Rand
@@ -147,10 +153,11 @@ also meant they could try to think about what would be the most
 natural way to talk about a process rather than what was the most
 straightforward to implement on some particular machine.
 
+* https://archive.org/details/bitsavers_univacflowProgrammingSystem1958_9367413/page/n39
+
 ---
 
 ![11](https://user-images.githubusercontent.com/1951835/53197069-46456980-35ce-11e9-97a5-fd646c4bee15.png)
-* http://www.softwarepreservation.org/projects/ALGOL/report/BauerBRS-Proposal_for_a_Universal_Language-1958.pdf
 
 The German authors of the "Proposal for a universal language for
 the description of computing processes" made two big conceptual leaps
@@ -178,10 +185,11 @@ been determined to be true. So if the statements controlled by
 the first if changed a variable that the second comparison depended upon,
 both blocks of statements might execute.
 
+* http://www.softwarepreservation.org/projects/ALGOL/report/BauerBRS-Proposal_for_a_Universal_Language-1958.pdf
+
 ---
 
 ![12](https://user-images.githubusercontent.com/1951835/53197081-4d6c7780-35ce-11e9-92f7-f60bc220301f.png)
-* http://www.softwarepreservation.org/projects/ALGOL/report/BauerBRS-Proposal_for_a_Universal_Language-1958.pdf
 
 Their proposal also included another entirely different conditional
 form, called "case." It is unrelated to what "case" now means in
@@ -197,10 +205,11 @@ cases were true: the remainder, as they referred to it.
 
 Why did they call it "else?" They don't say.
 
+* http://www.softwarepreservation.org/projects/ALGOL/report/BauerBRS-Proposal_for_a_Universal_Language-1958.pdf
+
 ---
 
 ![13](https://user-images.githubusercontent.com/1951835/53197096-54938580-35ce-11e9-8371-15fd57575ab1.png)
-* http://www.softwarepreservation.org/projects/ALGOL/report/BauerBRS-Proposal_for_a_Universal_Language-1958.pdf
 
 The best explanation for the word choice may be this note.
 We are looking at a document that was originally written in German
@@ -209,10 +218,11 @@ was not English. A carefully-chosen German word
 was probably translated as an archaic English word and then never revisited.
 Unfortunately we do not have the original German text to consult.
 
+* http://www.softwarepreservation.org/projects/ALGOL/report/BauerBRS-Proposal_for_a_Universal_Language-1958.pdf
+
 ---
 
 ![14](https://user-images.githubusercontent.com/1951835/53197793-cd471180-35cf-11e9-8fd5-7b032e01228d.png)
-* http://www.softwarepreservation.org/projects/ALGOL/report/ACM_ALGOL_Proposal_1958.pdf
 
 The other proposal for a machine-neutral programming language
 came from the Association for Computing Machinery in the United States.
@@ -229,10 +239,11 @@ would be short-circuited and skipped. This was just like "else if"
 as we use it now, but there was nothing corresponding to "else"
 without another if.
 
+* http://www.softwarepreservation.org/projects/ALGOL/report/ACM_ALGOL_Proposal_1958.pdf
+
 ---
 
 ![15](https://user-images.githubusercontent.com/1951835/53197122-62e1a180-35ce-11e9-9f26-63c87e6687b4.png)
-* http://www.softwarepreservation.org/projects/ALGOL/report/Algol58_preliminary_report_CACM.pdf
 
 The US and German organizations held a joint meeting at a conference
 in Switzerland and merged their proposals into a single document
@@ -248,10 +259,11 @@ by an "if," you could put them together into a block instead of
 needing the "always" to indicate where the block of controlled
 statements ended.
 
+* http://www.softwarepreservation.org/projects/ALGOL/report/Algol58_preliminary_report_CACM.pdf
+
 ---
 
 ![16](https://user-images.githubusercontent.com/1951835/53197134-6aa14600-35ce-11e9-9312-9332ca7b8184.png)
-* http://www.softwarepreservation.org/projects/ALGOL/report/Algol58_preliminary_report_CACM.pdf
 
 The Algol "if" construction didn't have anything like "else."
 Instead, they had a second conditional form called "if either,"
@@ -260,10 +272,11 @@ ifs, and used "or if" for what we would now call "else if." Like
 the American proposal that had gone in, the "if either" form still
 didn't have the idea of an "else" that was not followed by another if.
 
+* http://www.softwarepreservation.org/projects/ALGOL/report/Algol58_preliminary_report_CACM.pdf
+
 ---
 
 ![17](https://user-images.githubusercontent.com/1951835/53197144-71c85400-35ce-11e9-99ac-1ed3f1dc165c.png)
-* http://www.softwarepreservation.org/projects/ALGOL/paper/Backus-ICIP-1959.pdf
 
 The next year, the story gets very muddy. There were several papers
 presented about Algol at another conference in Paris in 1959, and
@@ -279,13 +292,14 @@ an earlier draft of what had already become "if either," published
 after it was already obsolete?  There is no documentation to say
 which it was.
 
+* http://www.softwarepreservation.org/projects/ALGOL/paper/Backus-ICIP-1959.pdf
+
 ---
 
 ![18](https://user-images.githubusercontent.com/1951835/53197164-7bea5280-35ce-11e9-92eb-6dd24abf3967.png)
-* http://www.softwarepreservation.org/projects/LISP/MIT/McCarthy-CC-56.pdf
 
 In either case, "if either" would not last for much longer.
-In 1957, John McCarthy at MIT had written a grant proposal
+In 1957, John McCarthy at MIT had written a proposal
 for a project that eventually became LISP, one of the other
 extremely old programming languages that still survives today.
 The language he proposed looks nothing like what LISP soon
@@ -298,10 +312,11 @@ So McCarthy's "if function" always contains a clause called "otherwise."
 "Otherwise" gives the final value of the expression when none of the
 other conditions in the if function have evaluated to true.
 
+* http://www.softwarepreservation.org/projects/LISP/MIT/McCarthy-CC-56.pdf
+
 ---
 
 ![19](https://user-images.githubusercontent.com/1951835/53197322-c8359280-35ce-11e9-9c0b-351a415a00d5.png)
-* https://dl.acm.org/citation.cfm?id=1060889
 
 This model of conditions inspired Klaus Samelson to clean up
 and unify Algol's two separate conditional models at the end
@@ -314,10 +329,11 @@ the previous "if either" had allowed with "or if," but you could
 also use "else" by itself for a final set of statements that
 would run if none of the conditions had been true.
 
+* https://dl.acm.org/citation.cfm?id=1060889
+
 ---
 
 ![20](https://user-images.githubusercontent.com/1951835/53197180-83116080-35ce-11e9-85c2-ff53a345a4e5.png)
-* https://fi.ort.edu.uy/innovaportal/file/20124/1/14-naure_algol60.pdf
 
 This was the single conditional form that appeared in the Algol 60
 report the next year, and is the form that almost all subsequent
@@ -327,10 +343,11 @@ report spends a page and a half explaining how it works, including
 this arrow diagram and the
 explation that "else" by itself is equivalent to "else if true then."
 
+* https://fi.ort.edu.uy/innovaportal/file/20124/1/14-naure_algol60.pdf
+
 ---
 
 ![21](https://user-images.githubusercontent.com/1951835/53197193-899fd800-35ce-11e9-9605-2da38f85c006.png)
-* http://www.ancientgeek.org.uk/CPL/CPL_Elementary_Programming_Manual.pdf
 
 As I said at the start, this use of "else" as a conjunction
 sounds strange to English speakers, and it did not take
@@ -342,10 +359,11 @@ most programming languages in use today. He called "else"
 and wanted to use "test … then … or" instead. But that doesn't
 sound very natural either, and it didn't catch on.
 
+* http://www.ancientgeek.org.uk/CPL/CPL_Elementary_Programming_Manual.pdf
+
 ---
 
 ![22](https://user-images.githubusercontent.com/1951835/53197217-91f81300-35ce-11e9-863b-5a017834f510.png)
-* http://www.bitsavers.org/pdf/univOfMichigan/mad/L2-UOI-MAD1-2-RX_MADum_62.pdf
 
 The MAD programming language from the University of Michigan 
 also went its own way. MAD was known
@@ -359,10 +377,11 @@ most other programming languages adopted this style of indenting
 the statements controlled by conditions, even though it now
 seems unimaginable to do it any other way.
 
+* http://www.bitsavers.org/pdf/univOfMichigan/mad/L2-UOI-MAD1-2-RX_MADum_62.pdf
+
 ---
 
 ![23](https://user-images.githubusercontent.com/1951835/53197232-991f2100-35ce-11e9-80f4-4189690a01fc.png)
-* https://www.in.tum.de/en/the-department/history/
 
 But even while CPL and MAD shunned the word "else," they kept
 the form and only changed the vocabulary. Language designers still search
@@ -370,3 +389,5 @@ for the perfect way to write a `for` loop, but the quest for
 the perfect conditional form seems to have ended in 1959.
 Thank you Klaus Samelson, for giving us a tool to think with
 and a word to puzzle over.
+
+* https://www.in.tum.de/en/the-department/history/
