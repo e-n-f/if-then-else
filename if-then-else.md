@@ -132,8 +132,8 @@ compare with as much complexity as you needed, including ands and ors,
 as long as the final result ended up with a true or false value.
 
 The second big leap was that instead of causing the flow of control
-to jump around, their "if" statement caused only a temporary diversion
-instead, just enough to let a series of statements subsidiary to
+to jump around, their "if" statement caused only a temporary diversion,
+just enough to let a series of statements subsidiary to
 the condition to be executed. Afterward, whether the expression had
 evaluated to true or to false, you would always end up at the
 "always" statement at the end of the block, and the only difference
