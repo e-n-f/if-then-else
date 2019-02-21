@@ -16,11 +16,16 @@ To understand why programmers talk about conditions the way they do,
 I thought it might help to look at how conditional processes were
 described before there were computers.
 
+* https://books.google.com/books?id=AH9Fs8huUGsC&pg=PA46#v=onepage&q&f=false
+* https://archive.org/details/actsstateohio39statgoog/page/n189
+
 It is actually hard to find good examples of these.
 About as close as you can come are surveys and legal procedures 
 that require you to answer certain questions only if you answered
 yes to a different question. But for the alternative cases,
 they say "if no," not "else."
+
+* https://archive.org/details/in.ernet.dli.2015.463129/page/n85
 
 And there are mathematical algorithms, like taking a cube root, that
 involve some guesswork, and require repeating a step if you guessed wrong.
@@ -28,12 +33,16 @@ But algorithms were mostly described in terms of repetition,
 not in terms of making decisions, and I haven't found any examples
 of "else" being used in the description of one.
 
+* https://apps.dtic.mil/dtic/tr/fulltext/u2/640621.pdf
+
 The first computer to be able to automatically perform a different set of instructions
 based on the result of a previous calculation seems to have been the Eniac.
 In 1946, Haskell Curry and Willa Wyatt wrote a report describing how to
 use the Eniac to invert a function and interpolate values.
 They used the name "discrimination" for the facility of making a decision
 based on which of two numbers was larger.
+
+* http://www.columbia.edu/cu/computinghistory/eniac.html
 
 The Eniac was programmed by connecting wires on plugboards, so
 they did not have an instruction called `discriminate.` They had
@@ -46,6 +55,8 @@ performed in numeric sequence, one after the other. A few special
 instructions can change this sequence by jumping forward or back
 to a different point in the sequence, either unconditionally or
 only in some particular circumstance.
+
+* http://s3data.computerhistory.org/brochures/eckertmauchly.binac.1949.102646200.pdf
 
 Here, for example, is the conditional jump instruction from the BINAC, one of
 the first commercially produced computers. It checked whether the machine's
@@ -60,11 +71,15 @@ the number of the current iteration. If the
 result was negative, that meant you weren't done yet, so you jumped back to do
 another round of calculation.
 
+* https://archive.computerhistory.org/resources/text/Fortran/102653982.05.01.acc.pdf
+
 This same idea was carried forward into the first higher-level
 programming languages, like Halcombe Laning and Neal Zierler's
 language at MIT for Whirlwind.  It followed exactly the same paradigm,
 except that the numbered steps of the program were evaluations of
 algebraic expressions, not single machine instructions.
+
+* https://www.fortran.com/FortranForTheIBM704.pdf
 
 The first widely used programming language was Fortran, from IBM,
 and it generalized this paradigm a little bit. Instead of checking
@@ -79,6 +94,8 @@ because it meant you *always* had to think about discontinuities in the flow of
 control instead of being able to make a clean distinction between the
 normal condition in which you continue on to the next step, and the
 unusual condition in which case you have to do something different.
+
+* https://archive.org/details/bitsavers_univacflowProgrammingSystem1958_9367413/page/n39
 
 One way of making these three-way comparisons a little easier to think
 about came from Flow-Matic, a programming language from Remington Rand
@@ -99,6 +116,8 @@ machine from one particular manufacturer. This machine independence
 also meant they could try to think about what would be the most
 natural way to talk about a process rather than what was the most
 straightforward to implement on some particular machine.
+
+* http://www.softwarepreservation.org/projects/ALGOL/report/BauerBRS-Proposal_for_a_Universal_Language-1958.pdf
 
 The German authors of the "Proposal for a universal language for
 the description of computing processes" made two big conceptual leaps
@@ -126,6 +145,8 @@ been determined to be true. So if the statements controlled by
 the first if changed a variable that the second comparison depended upon,
 both blocks of statements might execute.
 
+* http://www.softwarepreservation.org/projects/ALGOL/report/BauerBRS-Proposal_for_a_Universal_Language-1958.pdf
+
 Their proposal also included another entirely different conditional
 form, called "case." It is unrelated to what "case" now means in
 programming languages, and instead was another way to write boolean
@@ -136,6 +157,8 @@ In addition to the boolean expressions they also included a case
 called "else," which seems to be the first use of the word in
 programming languages. It denoted the case where none of the other
 cases were true.  Why did they call it "else?" They don't say.
+
+* http://www.softwarepreservation.org/projects/ALGOL/report/ACM_ALGOL_Proposal_1958.pdf
 
 The other proposal for a machine-neutral programming language
 came from a United States organization. It took the the idea of
@@ -152,6 +175,8 @@ would be short-circuited and skipped. This was just like "else if"
 as we use it now, but there was nothing corresponding to "else"
 without another if.
 
+* http://www.softwarepreservation.org/projects/ALGOL/report/Algol58_preliminary_report_CACM.pdf
+
 The US and German organizations held a joint meeting at a conference
 in Switzerland and merged their proposals into a single document
 that they called the International Algebraic Language, and would
@@ -166,12 +191,16 @@ by an "if," you could put them together into a block instead of
 needing the "always" to indicate where the block of controlled
 statements ended.
 
+* http://www.softwarepreservation.org/projects/ALGOL/report/Algol58_preliminary_report_CACM.pdf
+
 The Algol "if" construction didn't have anything like "else."
 Instead, they had a second conditional form called "if either,"
 that *did* have its own "end" statement at the end of a block of
 ifs, and used "or if" for what we would now call "else if." Like
 the American proposal that had gone in, the "if either" form still
 didn't have the idea of an "else" that was not followed by another if.
+
+* http://www.softwarepreservation.org/projects/ALGOL/paper/Backus-ICIP-1959.pdf
 
 The next year, the story gets very muddy. There were several papers
 presented about Algol at another conference in Paris in 1959, and
@@ -187,6 +216,8 @@ an earlier draft of what had become "if either," published
 after it was already obsolete?  There is no documentation to say
 which it was.
 
+* http://www.softwarepreservation.org/projects/LISP/MIT/McCarthy-CC-56.pdf
+
 In either case, "if either" would not last for much longer.
 In 1957, John McCarthy at MIT had written a grant proposal
 for a project that eventually became LISP, one of the other
@@ -201,6 +232,8 @@ So McCarthy's "if function" always contains a clause called "otherwise."
 "Otherwise" gives the final value of the expression when none of the
 other conditions in the if function evaluate to true.
 
+* https://dl.acm.org/citation.cfm?id=1060889
+
 This model of conditions allowed Klaus Samelson to clean up
 and unify Algol's two separate conditional models at the end
 of 1959. He eliminated the entire "if either" form, leaving
@@ -212,12 +245,16 @@ the previous "if either" had allowed with "or if," but you could
 also use "else" by itself for a final set of statements that
 would run if none of the conditions had been true.
 
+* https://fi.ort.edu.uy/innovaportal/file/20124/1/14-naure_algol60.pdf
+
 This was the single conditional form that appeared in the Algol 60
 report the next year, and is the form that almost all subsequent
 programming languages have followed. If-then-else was still apparently
 very difficult for people to think about in 1960, because the Algol
 report spends a page and a half explaining how it works, including the
 explation that "else" by itself is equivalent to "else if true then."
+
+* http://www.ancientgeek.org.uk/CPL/CPL_Elementary_Programming_Manual.pdf
 
 As I said at the start, this use of "else" as a conjunction
 sounds very strange to English speakers, and it did not take
@@ -227,6 +264,8 @@ CPL was the grandparent of C and therefore the ancestor of
 most programming languages in use today. He called "else"
 "ignorantly incorrect English" and "egregiously incorrect,"
 and wanted to use "or" instead. But it didn't catch on.
+
+* http://www.bitsavers.org/pdf/univOfMichigan/mad/L2-UOI-MAD1-2-RX_MADum_62.pdf
 
 A few programming languages did go their own way. The MAD
 programming language from the University of Michigan was known
@@ -240,10 +279,18 @@ most other programming languages adopted this style of indenting
 the statements controlled by conditions, even though it now
 seems unimaginable to do it any other way.
 
+* https://books.google.com/books?id=6O0GAAAAYAAJ&pg=PA2
+* https://books.google.com/books?id=DB9YAAAAYAAJ&pg=PA147
+* https://books.google.com/books?id=bCRcAAAAQAAJ&pg=PA1
+
 So back to the original question: why is it called "else?"
 I think the answer is that for a few 19th century mathematical writers,
 "else" really was a conjunction, before it fell completely out of use
-in the 20th century. Klaus Samelson was a German speaker,
+in the 20th century.
+
+* http://www.softwarepreservation.org/projects/ALGOL/report/BauerBRS-Proposal_for_a_Universal_Language-1958.pdf
+
+Klaus Samelson was a German speaker,
 and I think his knowledge of English came mostly from
 mathematical writing, so it didn't sound especially weird
 to him. And so, 60 years later, the archaic usage that he
