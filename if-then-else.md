@@ -286,10 +286,16 @@ seems unimaginable to do it any other way.
 * https://books.google.com/books?id=DB9YAAAAYAAJ&pg=PA147
 * https://books.google.com/books?id=bCRcAAAAQAAJ&pg=PA1
 
-So back to the original question: why is it called "else?"
-I think the answer is that for a few 19th century mathematical writers,
-"else" really was a conjunction, before it fell completely out of use
-in the 20th century.
+But even while CPL and MAD shunned the word "else," they kept
+the form and only changed the vocabulary. People keep searching
+for the perfect way to write a `for` loop, but the quest for
+the perfect conditional form seems to have ended in 1959.
+
+I still haven't answered the question of why it's called "else"
+because I really don't know. The best clue I have is that for a
+few 19th century mathematical writers, "else" really was a
+conjunction, before it completely fell out of use in the
+20th century.
 
 * http://www.softwarepreservation.org/projects/ALGOL/report/BauerBRS-Proposal_for_a_Universal_Language-1958.pdf
 
