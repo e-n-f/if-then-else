@@ -167,7 +167,8 @@ Why did they call it "else?" They don't say.
 
 The best explanation for the word choice may be this note.
 We are looking at a document that was originally written in German
-and was hastily translated into English. A carefully-chosen German word
+and was hastily translated into English by someone whose native language
+was not English. A carefully-chosen German word
 was probably translated as an archaic English word and then never revisited.
 Unfortunately we do not have the original German text to consult.
 
