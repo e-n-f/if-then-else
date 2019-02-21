@@ -159,7 +159,9 @@ that you could put ifs inside cases, for nested comparisons.
 In addition to the boolean expressions they also included a case
 called "else," which seems to be the first use of the word in
 programming languages. It denoted the case where none of the other
-cases were true.  Why did they call it "else?" They don't say.
+cases were true: the remainder, as they referred to it.
+
+Why did they call it "else?" They don't say.
 
 * http://www.softwarepreservation.org/projects/ALGOL/report/BauerBRS-Proposal_for_a_Universal_Language-1958.pdf
 
@@ -167,6 +169,7 @@ The best explanation for the word choice may be this note.
 We are looking at a document that was originally written in German
 and was hastily translated into English. A carefully-chosen German word
 was probably translated as an archaic English word and then never revisited.
+Unfortunately we do not have the original German text to consult.
 
 * http://www.softwarepreservation.org/projects/ALGOL/report/ACM_ALGOL_Proposal_1958.pdf
 
