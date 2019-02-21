@@ -235,7 +235,7 @@ other conditions in the if function evaluate to true.
 
 * https://dl.acm.org/citation.cfm?id=1060889
 
-This model of conditions allowed Klaus Samelson to clean up
+This model of conditions inspired Klaus Samelson to clean up
 and unify Algol's two separate conditional models at the end
 of 1959. He eliminated the entire "if either" form, leaving
 only the plain if, but added a clause called "else" that would
@@ -250,15 +250,16 @@ would run if none of the conditions had been true.
 
 This was the single conditional form that appeared in the Algol 60
 report the next year, and is the form that almost all subsequent
-programming languages have followed. If-then-else was still apparently
-very difficult for people to think about in 1960, because the Algol
-report spends a page and a half explaining how it works, including the
+programming languages have followed. If-then-else was apparently
+not easy for people in 1960 to think, because the Algol
+report spends a page and a half explaining how it works, including
+this arrow diagram and the
 explation that "else" by itself is equivalent to "else if true then."
 
 * http://www.ancientgeek.org.uk/CPL/CPL_Elementary_Programming_Manual.pdf
 
 As I said at the start, this use of "else" as a conjunction
-sounds very strange to English speakers, and it did not take
+sounds strange to English speakers, and it did not take
 long before some objections to it were raised. One was from
 Christopher Strachey, designing the CPL programming language.
 CPL was the grandparent of C and therefore the ancestor of
