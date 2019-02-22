@@ -150,7 +150,7 @@ conditions in a natural way.
 
 ---
 
-![11](https://user-images.githubusercontent.com/1951835/53197069-46456980-35ce-11e9-97a5-fd646c4bee15.png)
+![algol](https://user-images.githubusercontent.com/1951835/53220700-bf6aae00-361a-11e9-835d-27b359b4fb14.png)
 
 In 1958, two different national organizations began projects
 to develop programming languages that were not tied to one particular
@@ -158,6 +158,12 @@ machine from one particular manufacturer. By being machine-independent
 they could try to think about what would be the most
 natural way for people to talk about a process rather than what was the most
 straightforward to implement it on some particular machine.
+
+* https://dl.acm.org/citation.cfm?id=800025
+
+---
+
+![11](https://user-images.githubusercontent.com/1951835/53197069-46456980-35ce-11e9-97a5-fd646c4bee15.png)
 
 The German authors of the "Proposal for a universal language for
 the description of computing processes" made two big conceptual leaps
