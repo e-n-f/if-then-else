@@ -163,7 +163,7 @@ straightforward to implement it on some particular machine.
 
 ---
 
-![11](https://user-images.githubusercontent.com/1951835/53197069-46456980-35ce-11e9-97a5-fd646c4bee15.png)
+![11](https://user-images.githubusercontent.com/1951835/53227239-9524ea80-3632-11e9-927e-16e887a186a4.png)
 
 The German authors of the "Proposal for a universal language for
 the description of computing processes" made two big conceptual leaps
@@ -174,6 +174,10 @@ less-than/equal/greater-than comparison form, their "if" statement
 accepted arbitrary boolean expressions. You could calculate and
 compare with as much complexity as you needed, including ands and ors,
 as long as the final result ended up with a true or false value.
+
+---
+
+![11](https://user-images.githubusercontent.com/1951835/53197069-46456980-35ce-11e9-97a5-fd646c4bee15.png)
 
 The second big leap was that instead of causing the flow of control
 to jump around, their "if" statement caused only a temporary diversion,
