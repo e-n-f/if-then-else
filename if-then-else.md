@@ -22,9 +22,9 @@ into any books on the history of programming languages.
 
 ![03](https://user-images.githubusercontent.com/1951835/53196896-f23a8500-35cd-11e9-8df5-9169cb63285c.png)
 
-To understand why programmers talk about conditions the way they do,
-I thought it might help to look at how conditional processes were
-described before there were computers.
+I thought I might find some clues about why programmers talk about
+conditions the way they do by looking at descriptions of
+conditional processes from before there were computers.
 
 It is actually hard to find good examples of these.
 About as close as you can come are surveys and legal procedures 
@@ -65,7 +65,7 @@ based on which of two numbers was larger.
 ![06](https://user-images.githubusercontent.com/1951835/53196947-0c746300-35ce-11e9-8db7-2e8f0fc2e1d8.png)
 
 The Eniac was programmed by connecting wires on plugboards, so
-they did not have an instruction called `discriminate.` They had
+it did not have an instruction called `discriminate.` It had
 physical wires connecting the control panel for one instruction
 to the control panels of the alternative instructions that could follow it.
 
@@ -85,8 +85,8 @@ only in some particular circumstance.
 Here, for example, is the conditional jump instruction from the BINAC, one of
 the first commercially produced computers. It checked whether the machine's
 accumulator contained a negative number. If it did, it diverted the flow of
-control to some specified instruction; otherwise, it let control continue
-normally to the next instruction.
+control to some specified location in memory; otherwise, it let control
+continue normally to the next instruction.
 
 This instruction was designed to support a specific usage pattern:
 if you wanted to do a thing several times, at the end of each iteration
@@ -114,8 +114,8 @@ algebraic expressions, not single machine instructions.
 ![09](https://user-images.githubusercontent.com/1951835/53197039-362d8a00-35ce-11e9-8099-b1597edc5f97.png)
 
 The first widely used programming language was Fortran, from IBM,
-and it generalized this paradigm a little bit. Instead of checking
-whether the result of a calculation was negative, its "if" statement
+and it generalized this idea a little bit. Instead of checking
+whether the result of a calculation was negative, Fortran's "if" statement
 checked whether an expression was negative, zero, or positive, and
 jumped to one of three different locations in the program depending
 on which it was.
@@ -146,18 +146,18 @@ flow of control, but the jumps were based on comparisons, not on
 arithmetic signs, so they were one step closer to talking about
 conditions in a natural way.
 
-That same year, two different national organizations began projects
-to develop programming languages that were not tied to one particular
-machine from one particular manufacturer. This machine independence
-also meant they could try to think about what would be the most
-natural way to talk about a process rather than what was the most
-straightforward to implement on some particular machine.
-
 * https://archive.org/details/bitsavers_univacflowProgrammingSystem1958_9367413/page/n39
 
 ---
 
 ![11](https://user-images.githubusercontent.com/1951835/53197069-46456980-35ce-11e9-97a5-fd646c4bee15.png)
+
+In 1958, two different national organizations began projects
+to develop programming languages that were not tied to one particular
+machine from one particular manufacturer. By being machine-independent
+they could try to think about what would be the most
+natural way for people to talk about a process rather than what was the most
+straightforward to implement it on some particular machine.
 
 The German authors of the "Proposal for a universal language for
 the description of computing processes" made two big conceptual leaps
