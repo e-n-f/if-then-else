@@ -123,7 +123,7 @@ the case where the comparison wasn't what you were looking for.
 All these programming languages were associated with one particular computer
 from one particular manufacturer.  In 1958, two American and German computing
 organizations began a joint project to develop a standard machine-independent
-language, one that would natural for people to talk about rather than natural
+language, one that would be natural for people to talk about rather than natural
 to implement on some particular machine. Each group brought a draft proposal
 to the joint conference.
 
