@@ -33,7 +33,7 @@ and "if however", but not "else".
 The first computer to be able to perform different instructions
 depending on the result of a previous calculation seems to have been the Eniac.
 In 1946, Haskell Curry and Willa Wyatt wrote this report describing a program
-to invert a function. They called used the name "discrimination" for the
+to invert a function. They used the name "discrimination" for the
 facility of making a decision based on which of two numbers was larger.
 
 * https://apps.dtic.mil/dtic/tr/fulltext/u2/640621.pdf
@@ -43,7 +43,7 @@ facility of making a decision based on which of two numbers was larger.
 
 The Eniac did not have an instruction called "discriminate."
 It was programmed by wires and dials on plugboards, and the
-control panel for an instruction that made a calculation for
+control panel for the instruction that made a calculation for
 a decision was connected by physical wires to the instructions
 that could follow it.
 
@@ -76,7 +76,7 @@ done, so it jumped back to do another round.
 
 The idea was carried forward into the first higher-level
 programming languages, like Halcombe Laning and Neal Zierler's
-language for Whirlwind. Their conditional jump worked the same,
+language for Whirlwind. Their conditional jump worked the same way,
 except that the numbered steps of the program were algebraic
 expressions, not single machine instructions.
 
@@ -91,7 +91,7 @@ a calculation was negative, zero, or positive, and gave it the name "if."
 
 The three-way "if" was more powerful than just checking for a negative,
 but was probably more confusing, because every decision meant
-a discontinuity in the control flow instead of programmers just having
+a discontinuity in the control flow instead of programmers only having
 to think about the normal case that continued on and the unusual case
 that jumped.
 
@@ -102,7 +102,7 @@ that jumped.
 
 Flow-Matic, Grace Murray Hopper's predecessor to COBOL, made the three-way if
 a little easier to think about by talking about comparing two numbers instead
-of about the signs of numbers. It also introduced the name "otherwise" for
+of about the signs of numbers. It introduced the name "otherwise" for
 the case where the comparison wasn't what you were looking for.
 
 * https://archive.org/details/bitsavers_univacflowProgrammingSystem1958_9367413/page/n39
@@ -110,10 +110,10 @@ the case where the comparison wasn't what you were looking for.
 ---
 
 
-All these programming languages were associated with a particular computer
-from a particular manufacturer.  In 1958, two American and German computing
+All these programming languages were associated with one particular computer
+from one particular manufacturer.  In 1958, two American and German computing
 organizations began a joint project to develop a standard machine-independent
-language that would natural for people to talk about rather than natural
+language, one that would natural for people to talk about rather than natural
 to implement on some particular machine. Each group brought a draft proposal
 to the joint conference.
 
@@ -122,8 +122,8 @@ to the joint conference.
 ---
 
 
-The German authors made two big conceptual leaps in the formulation of
-their "if" statement.
+The German authors made two big conceptual leaps in their formulation of
+the "if" statement.
 
 The first was to let the conditional be controlled by any boolean expression
 rather than giving special priority to the less-than/equal/greater-than form.
@@ -139,7 +139,7 @@ at the end of the block. The only difference would be whether the
 subsidiary statements had been performed.
 
 The example on screen shows two "ifs" in a single block, and you might
-think that the other would behave like an "else if" does now. But
+think that the second one was intended to work as an "else if" does now. But
 they expected all the conditions to be evaluated, even if one had already
 been found to be true. So if the statements controlled by the first
 changed a value that the second comparison depended upon, both blocks
@@ -186,7 +186,7 @@ the statements that followed the arrow.
 
 The notation doesn't make it obvious, but unlike the German block of ifs,
 in the American form, if one expression in a block evaluated to true,
-it short-circuited and skipped the other expressions, like "else if"
+it did short-circuit and skip the following expressions, like "else if"
 does now.
 
 * http://www.softwarepreservation.org/projects/ALGOL/report/ACM_ALGOL_Proposal_1958.pdf
@@ -196,7 +196,7 @@ does now.
 
 The two organizations held a joint meeting and merged their proposals
 into a single document that they called the International Algebraic Language.
-It would subsequently be renamed to Algol.
+Before long the language would be renamed to Algol.
 
 The "if" statement in the combined document looks a lot like the
 German proposal, but eliminates the "always" statement to end the block.
@@ -224,12 +224,12 @@ without another "if."
 The story gets muddy the next year, when several papers about Algol
 were presented at a conference. One of them was the paper where John Backus,
 who had previously led the Fortran project, introduced the idea of formal
-grammars for programming language.
+grammars for programming languages.
 
-As he describes it, Algol doesn't have the "if either" conditional form.
+Algol as he describes it doesn't have the "if either" conditional form.
 Instead, it has a keyword called "converge," which makes the top-level
-"ifs" instead its block behave like "else ifs." It is not clear whether
-this was an idea for a better "if either," or whether it was an earlier
+"ifs" inside its block behave like "else ifs." It is not clear whether
+this was meant as an idea for a better "if either," or whether it was an earlier
 idea that had already been rejected in favor of "if either."
 
 * http://www.softwarepreservation.org/projects/ALGOL/paper/Backus-ICIP-1959.pdf
@@ -247,7 +247,7 @@ The important distinction is that an expression must always have a value,
 while a statement can simply not be performed if the condition that controls
 it is not true.
 
-So his "if function" always ends with a clause called "otherwise,"
+So his "if function" always ends with a clause called "otherwise"
 that gives the value of the expression when none of the other
 conditions have evaluated to true.
 
@@ -256,7 +256,7 @@ conditions have evaluated to true.
 ---
 
 
-This model of conditions inspired Klaus Samelson to clean up
+McCarthy's conditional expressions inspired Klaus Samelson to clean up
 and unify Algol's two separate conditional models at the end
 of 1959. He eliminated the entire "if either" form, leaving
 only the plain "if," but added a clause called "else" that would
@@ -277,7 +277,7 @@ would run if none of the conditions had been true.
 report the next year, and is the form that almost all subsequent
 programming languages have followed.
 
-Although it seems to clear to us now, it was not clear to people in 1960,
+Although it seems clear to us now, it was hard for people in 1960 to think about,
 and the report spends a page and a half explaining how it works,
 including this arrow diagram.
 
@@ -286,7 +286,7 @@ including this arrow diagram.
 ---
 
 
-As I said, the use of "else" as a conjuction sounds strange.
+As I mentioned, the use of "else" as a conjuction sounds strange.
 Christopher Strachey's CPL programming language is the grandparent
 of C and therefore the ancestor of most current programming languages,
 and he refused to use "else," calling it "ignorantly incorrect English."
