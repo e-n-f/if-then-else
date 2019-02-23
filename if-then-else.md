@@ -22,7 +22,7 @@ into books on the history of programming languages.
 
 ![03](https://user-images.githubusercontent.com/1951835/53279381-bb936600-36c4-11e9-83ae-53858a8319a2.png)
 
-It doesn't seem to have come from algorithms or surveys or legal proceedings
+It doesn't seem to have come from surveys or legal proceedings or algorithms
 as they were written before there were computers. You find "if yes" and "if no"
 and "if however", but not "else".
 
