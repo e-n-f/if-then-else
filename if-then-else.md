@@ -8,7 +8,7 @@ that if-then-else had to be invented.
 ![02](https://user-images.githubusercontent.com/1951835/53196889-ed75d100-35cd-11e9-8d4c-c5fbf76c2dfc.png)
 
 If-then-else is how we talk about conditions in programming languages:
-*if* something is true, *then* do a thing, *else* do a different thing.
+if something is true, then do a thing, else do a different thing.
 
 That's just English, right? Except that it isn't.
 I can't use "else" as a conjunction in normal speech,
