@@ -20,7 +20,7 @@ into books on the history of programming languages.
 
 ---
 
-! XXX figure
+![03](https://user-images.githubusercontent.com/1951835/53279381-bb936600-36c4-11e9-83ae-53858a8319a2.png)
 
 It doesn't seem to have come from algorithms or surveys or legal proceedings
 as they were written before there were computers. You find "if yes" and "if no"
@@ -274,7 +274,7 @@ conditions have evaluated to true.
 
 ---
 
-![19](https://user-images.githubusercontent.com/1951835/53197322-c8359280-35ce-11e9-9c0b-351a415a00d5.png)
+![20](https://user-images.githubusercontent.com/1951835/53279391-c817be80-36c4-11e9-8fa5-fd1df6942fdf.png)
 
 This model of conditions inspired Klaus Samelson to clean up
 and unify Algol's two separate conditional models at the end
@@ -335,7 +335,7 @@ seems unimaginable to do it any other way.
 
 ---
 
-![23](https://user-images.githubusercontent.com/1951835/53197232-991f2100-35ce-11e9-80f4-4189690a01fc.png)
+![24](https://user-images.githubusercontent.com/1951835/53279397-d1089000-36c4-11e9-8582-fa90f64837a7.png)
 
 But even while CPL and MAD shunned the word "else," they kept
 the form and only changed the vocabulary. Language designers still search
