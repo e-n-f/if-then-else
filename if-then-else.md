@@ -298,7 +298,7 @@ would run if none of the conditions had been true.
 report the next year, and is the form that almost all subsequent
 programming languages have followed.
 
-Although it seems to clear to us now, it was not clear to people in 1960,
+Although it seems clear to us now, it was not clear to people in 1960,
 and the report spends a page and a half explaining how it works,
 including this arrow diagram.
 
