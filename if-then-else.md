@@ -316,6 +316,7 @@ He thought we should write "test … then … or" instead, which also
 doesn't sound very natural, and didn't catch on.
 
 * http://www.ancientgeek.org.uk/CPL/CPL_Elementary_Programming_Manual.pdf
+* https://www.computer.org/csdl/mags/an/2013/03/06231610.pdf
 
 ---
 
