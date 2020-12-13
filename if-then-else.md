@@ -1,3 +1,7 @@
+[Video](https://www.youtube.com/watch?v=4A94JsWTXXw)
+
+---
+
 ![01](https://user-images.githubusercontent.com/1951835/53196872-e0f17880-35cd-11e9-86ce-f832c4d3e00e.png)
 
 Hi, I'm Eric. I'm here to talk about what seems like an absurd idea:
