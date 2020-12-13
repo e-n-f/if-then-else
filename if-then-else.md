@@ -327,7 +327,7 @@ for its extremely long keywords, and in addition to using
 "whenever" instead of "if," it used "otherwise" instead of "else"
 and "or whenever" instead of "else if."
 
-It is worth nothing the indentation in the MAD manual's example.
+It is worth noting the indentation in the MAD manual's example.
 It took years before most other programming languages adopted
 this style of indenting conditions, even though it now
 seems unimaginable to do it any other way.
